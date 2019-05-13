@@ -1,0 +1,96 @@
+@import 'mixins';
+@import 'vars';
+
+@include main;
+
+header, footer {
+    @include clearfix;
+}
+
+header {
+    height: 10%;
+    background-color: white;
+    padding: 0.5em;
+    @include clearfix;
+
+    .navigacija1 {
+        float: left;
+        ul {
+            list-style: none;
+            li { 
+                display: inline-block;
+                margin-left: 2em;
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    line-height: 3em;
+                    color: black;
+
+                    &:hover {
+                        background-color: black;
+                        color: #eeeeee;
+                    }
+                }
+            }
+        }
+    }
+    .navigacija2 {
+        float: right;
+        ul {
+            list-style: none;
+            li {
+                display: inline-block;
+                margin-right: 2em;
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    line-height: 3em;
+                    color: black;
+
+                    &:hover {
+                        background-color: black;
+                        color: #eeeeee;
+                    }
+                }
+            }
+        }
+    }
+    img {
+        width: 2%;
+    }
+}
+
+.prva {
+    height: 100vh;
+    background-image: url(../slike/hero.jpg);
+    background-size: cover;
+
+}
+
+#knjige {
+    background-color: white;
+    text-align: center;
+    @include clearfix;
+
+    h2 {
+        padding: 2em;
+        text-transform: uppercase;
+        font-weight: bolder;
+    }
+
+    .book {
+        width: 30%;
+        float: left;
+        text-align: center;
+
+        
+        img {
+            width: 10%;
+        }
+
+        h3 {
+            text-align: center;
+            color: $narandzasta; 
+        }
+    }
+}
