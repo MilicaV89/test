@@ -71,16 +71,21 @@
     <section class="podaci">
         <h2>Get in touch</h2>
         <p>Ask us anything. We'll get in touch as soon as we can.</p>
+        <div class="kontakt">
         <form action="#" method="post" class="forma">
-                <optgroup>
-                        <option value="1">Mr</option>
-                        <option value="2">Mrs</option>
-                </optgroup>
-			<input type="text" name="contact_name" class="contact" placeholder="Your Name">
+                <select class="nabrajanje">
+                        <optgroup label="Mr">
+                            <option value="Mr">Mr</option>
+                            <option value="Mrs">Mrs</option>
+                        </optgroup>
+                </select>
+            <input type="text" name="contact_name" class="contact" placeholder="First Name">
+            <input type="text" name="contact_name" class="contact" placeholder="Last Name">
 			<input type="text" name="contact_email" class="contact" placeholder="Your e-mail">
 			<textarea name="contact_message" placeholder="Message"></textarea>
         </form>
         <a href="#">Send</a>
+    </div>
     </section>
     <section>
         <div>
