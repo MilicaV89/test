@@ -12,6 +12,7 @@ header {
     background-color: white;
     padding: 0.5em;
     @include clearfix;
+    font-family: $tekst; 
 
     .navigacija1 {
         float: left;
@@ -64,6 +65,7 @@ header {
     height: 100vh;
     background-image: url(../slike/hero.jpg);
     background-size: cover;
+    font-family: $naslovi;
 
     &:hover {
         background-color: $crna;
@@ -81,12 +83,14 @@ header {
         padding: 2em;
         text-transform: uppercase;
         font-weight: bolder;
+        font-family: $naslovi;
     }
 
     .book {
         width: 30%;
         float: left;
         text-align: center;
+        font-family: $tekst;
 
         
         img {
@@ -95,7 +99,8 @@ header {
 
         h3 {
             text-align: center;
-            color: $narandzasta; 
+            color: $narandzasta;
+            font-family: $naslovi; 
         }
 
         &:hover {
@@ -105,6 +110,7 @@ header {
             }
             h3 {
                 color: white;
+                font-family: $naslovi;
             }
             .paragraf {
                 color: $narandzasta
@@ -117,16 +123,18 @@ header {
 }
 
 .podaci {
+    font-family: $tekst;
     h2 {
 		text-align: center;
 		text-transform: uppercase;
         font-size: 2em;
         padding: 1em;
+        font-family: $naslovi;
     }
     p {
 		text-align: center;
 		color: $narandzasta;
-		font-size: 1.2em;
+        font-size: 1.2em;
     }
 
     .kontakt {
@@ -187,4 +195,36 @@ header {
 }
 }
 
-    
+.neka { 
+    background: black;
+    @include clearfix;
+    font-family: $tekst;
+
+    .logo {
+        padding: 3em;
+        color: white;
+    }
+
+    nav {
+        float: left;
+        ul {
+            list-style: none;
+            li { 
+                display: inline-block;
+                margin-left: 2em;
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    line-height: 3em;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .map {
+        float: right;
+        margin: 2em;
+
+    }
+}
